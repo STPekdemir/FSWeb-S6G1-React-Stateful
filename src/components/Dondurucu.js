@@ -48,14 +48,14 @@ export default function Dondurucu() {
     <div className="widget-spinner container">
       <h2>Döndürücü</h2>
       {
-        true && (
+        döndürücüAçık && (
           <div id="döndürücü" className="spinner">
             --+--
           </div>
         ) /* ADIM 2 */
       }
       <button id="toggleDondurucu" onClick={toggleDondurucu}>
-        Gizle {/* STEP 3 */}
+        {/* STEP 3 */ döndürücüAçık ? "Gizle" : "Göster"}
       </button>
     </div>
   );
